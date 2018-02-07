@@ -249,7 +249,8 @@ Move it away, and try again.
 
 ### 发布到npm中
 
-发布必须注册 [npm](https://www.npmjs.com/) 账号，还有 [github](https://github.com/cllgeek) 账号，具体怎么玩儿问 谷歌大婶吧。在[JSLite.io](http://jslite.io) 中也有教程哦。
+发布必须注册 [npm](https://www.npmjs.com/) 账号，还有 [github](https://github.com/cllgeek) 账号，具体怎么玩儿问 谷歌大婶吧。在[NPM 中文文档
+](https://www.kancloud.cn/shellway/npm-doc/199994) 中也有教程哦。
 
 ```
 npm publish
