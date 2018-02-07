@@ -24,8 +24,8 @@ program
         //这里输出子命令的帮助
         console.log('  Examples:');
         console.log('    运行方法：');
-        console.log('    $ ./bin/wcj.js resume ss -n aaaaa');
-        console.log('    $ ./bin/wcj.js resume ss');
+        console.log('    $ ./bin/geekjc-command.js resume ss -n aaaaa');
+        console.log('    $ ./bin/geekjc-command.js resume ss');
         console.log();
     });
 

@@ -45,7 +45,7 @@ $ sudo npm install -g geekjc-command
 
 # 输出帮助
 $ geekjc-command -h
-  Usage: wcj 这里是我私人玩耍的命令哦！[options] <package>
+  Usage: geekjc-command 这里是我私人玩耍的命令哦！[options] <package>
 
 
   Commands:
@@ -58,7 +58,7 @@ $ geekjc-command -h
     -V, --version  output the version number
 
 # 输出子命令帮助
-$ wcj rs -h
+$ geekjc-command rs -h
 
   Usage: resume|rs [options] [cmd]
 
@@ -310,9 +310,9 @@ program.parse(process.argv);
 
 ```shell
 
-./bin/wcj.js -h
+./bin/geekjc-command.js -h
 ## 输出下面内容
-  Usage: wcj [options]
+  Usage: geekjc-command [options]
 
   Options:
 
@@ -321,11 +321,11 @@ program.parse(process.argv);
     -r, --resume   简历
 ```
 
-可以看到默认就有个 `-h` 参数，传入后会输出 `wcj` 命令的帮助信息。  
+可以看到默认就有个 `-h` 参数，传入后会输出 `geekjc-command` 命令的帮助信息。  
 
 ## Custom option
 
-为 `wcj` 命令增加一个 `option`，展示说明是我的简历。
+为 `geekjc-command` 命令增加一个 `option`，展示说明是我的简历。
 
 ```
 program
@@ -353,7 +353,7 @@ if (program.resume) {
 当接收到未定义的option时，程序会自动抛出错误
 
 ```shell
-./bin/wcj.js --res
+./bin/geekjc-command.js --res
 
 ## 输出下面内容
 error: unknown option '--res'
@@ -409,12 +409,12 @@ if (program.database) console.log('db: 我擅长的语言`' + program.database +
 看下效果
 
 ```shell
-./bin/wcj.js -l python
+./bin/geekjc-command.js -l python
 ## 输出
 language: 我擅长的语言`python`
 db: 我擅长的语言`MySQL`
 
-./bin/wcj.js -l
+./bin/geekjc-command.js -l
 ## 输出
   error: option '-l, --language <lang>' argument missing
 ```
@@ -457,8 +457,8 @@ Commander会根据配置的option，sub-command等信息，自动生成help信�
 program.on('--help', function () {
     console.log('  自定义的例子:')
     console.log('')
-    console.log('    输出命令  wcj -d')
-    console.log('    输出命令  wcj -l python')
+    console.log('    输出命令  geekjc-command -d')
+    console.log('    输出命令  geekjc-command -l python')
     console.log('')
 })
 
@@ -468,9 +468,9 @@ program.parse(process.argv);
 效果如下：
 
 ```shell
-./bin/wcj.js -h
+./bin/geekjc-command.js -h
 
-  Usage: wcj [options]
+  Usage: geekjc-command [options]
 
   Options:
 
@@ -481,13 +481,13 @@ program.parse(process.argv);
 
   自定义的例子:
 
-    输出命令  wcj -d
-    输出命令  wcj -l python
+    输出命令  geekjc-command -d
+    输出命令  geekjc-command -l python
 ```
 
 ## 像git风格一样的命令
 
-[列子源码](https://github.com/jaywcjlove/wcj/blob/master/examples/gitstyle.js)
+[列子源码](https://github.com/cllgeek/geekjc-command/blob/master/examples/gitstyle.js)
 
 ```js
 #!/usr/bin/env node 
@@ -517,8 +517,8 @@ program
         //这里输出子命令的帮助
         console.log('  Examples:');
         console.log('    运行方法：');
-        console.log('    $ ./bin/wcj.js resume ss -n aaaaa');
-        console.log('    $ ./bin/wcj.js resume ss');
+        console.log('    $ ./bin/geekjc-command.js resume ss -n aaaaa');
+        console.log('    $ ./bin/geekjc-command.js resume ss');
         console.log();
     });
 
@@ -528,12 +528,12 @@ program.parse(process.argv);
 上面实例运行输出方式
 
 ```shell
-$ ./bin/wcj.js resume ss -n aaaaa
+$ ./bin/geekjc-command.js resume ss -n aaaaa
 
 #输出：
 resume "ss" 使用 aaaaa 模式
 
-$ ./bin/wcj.js resume ss
+$ ./bin/geekjc-command.js resume ss
 #输出：
 resume "aa" 使用  模式
 ```
