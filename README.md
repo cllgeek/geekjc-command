@@ -1,6 +1,6 @@
-wcj
+geekjc
 ---
-[![](https://img.shields.io/github/issues/jaywcjlove/wcj.svg)](https://github.com/jaywcjlove/wcj/issues) [![](https://img.shields.io/github/forks/jaywcjlove/wcj.svg)](https://github.com/jaywcjlove/wcj/network) [![](https://img.shields.io/github/stars/jaywcjlove/wcj.svg)](https://github.com/jaywcjlove/wcj/stargazers) [![](https://img.shields.io/github/release/jaywcjlove/wcj.svg)](https://github.com/jaywcjlove/wcj/releases)
+[![](https://img.shields.io/github/issues/cllgeek/geekjc-command.svg)](https://github.com/cllgeek/geekjc-command/issues) [![](https://img.shields.io/github/forks/cllgeek/geekjc-command.svg)](https://github.com/cllgeek/geekjc-command/network) [![](https://img.shields.io/github/stars/cllgeek/geekjc-command.svg)](https://github.com/cllgeek/geekjc-command/stargazers) [![](https://img.shields.io/github/release/cllgeek/geekjc-command.svg)](https://github.com/cllgeek/geekjc-command/releases)
 
 这不仅是一篇教程，还是通过命令行输出我自己简历的一个工具O(∩_∩)O哈哈哈~，很有趣的样子哦。
 
