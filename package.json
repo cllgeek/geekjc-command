@@ -1,0 +1,24 @@
+{
+  "name": "geekjc",
+  "version": "1.0.0",
+  "description": "Node.js make command-line tool for learning .",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cllgeek/geekjc-command.git"
+  },
+  "main": "index.js",
+  "bin": {
+    "geekjc-command": "bin/geekjc-command.js"
+  },
+  "keywords": [
+    "geekjc",
+    "commander",
+    "resume"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "colors-cli": "^1.0.7",
+    "commander": "^2.8.1"
+  }
+}
