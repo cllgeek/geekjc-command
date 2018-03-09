@@ -53,7 +53,7 @@ program
         };
         log('    -e, --education 教育经历');
         log('    -i, --itskill 教育经历');
-        // log('    $ wcj resume ss');
+        // log('    $ geekjc resume ss');
         log();
     });
 
